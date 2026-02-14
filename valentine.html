@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Favorite Person</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="particles" id="particles"></div>
+
+    <main class="wrapper">
+        <section class="scene active" id="s1">
+            <div class="glass-card">
+                <div class="envelope-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="white" stroke-width="2"/>
+                        <path d="M22 6L12 13L2 6" stroke="white" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h1 class="main-title">You Have 1 New Message</h1>
+                <p>Special invitation just for you, love.</p>
+                <div class="btn-group">
+                    <button class="btn btn-primary" onclick="startApp()">OPEN NOW</button>
+                    <button class="btn btn-secondary" id="runBtn" onmouseover="runAway()">IGNORE</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="scene" id="s2">
+            <h2 class="title-gold">Our Golden Memories</h2>
+            <div class="big-gallery">
+                <div class="polaroid-large"><img src="foto 1.jpeg" alt="foto 1"></div>
+                <div class="polaroid-large"><img src="foto 2.jpeg" alt="foto 2"></div>
+                <div class="polaroid-large"><img src="foto 3.jpeg" alt="foto 3."></div>
+            </div>
+            <button class="btn btn-primary" onclick="nextScene(3)">NEXT PAGE</button>
+        </section>
+
+        <section class="scene" id="s3">
+            <div class="music-layout">
+                <div class="vinyl-side">
+                    <div class="vinyl">
+                        <img src="foto 4.jpeg" class="vinyl-center">
+                    </div>
+                </div>
+                <div class="info-side">
+                    <span class="badge">NOW PLAYING</span>
+                    <h2>Taylor Swift - So High School</h2>
+                    <p>"I found a love, to carry more than just my secrets..."</p>
+                    <button class="btn btn-primary" onclick="nextScene(4)">READ MY LETTER</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="scene" id="s4">
+            <div class="letter-box">
+                <h2 class="handwriting">Dear Favorite Person...</h2>
+                <div class="text-body">
+                    <p>Happy Valentine's Day! maaf cuman bisa ngasih seperti ini seenggak nya bisa bikin kamu senyum senyumm sendiri dan semoga kamu suka, orang lain boleh ngasih coklat tapi aku ingin tampil beda wlee :p .</p>
+                </div>
+                <button class="btn btn-primary" style="margin-top: 20px;" onclick="location.reload()">REPLAY STORY</button>
+            </div>
+        </section>
+    </main>
+
+    <audio id="vibeMusic" loop>
+        <source src="lagu/song.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
